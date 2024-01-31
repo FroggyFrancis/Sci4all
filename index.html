@@ -28,7 +28,7 @@
   }
 
   .dropdown .dropbtn {
-    font-size: 16px;  
+    font-size: 16px;
     border: none;
     outline: none;
     color: white;
@@ -71,7 +71,7 @@
       background-color: #c6dae6; /* Set background color to #c6dae6 */
   }
 
-    
+
   /* Add CSS for horizontal navigation */
   .w3-bar-item {
       border-bottom: 2px solid transparent;
@@ -93,8 +93,8 @@
     margin-bottom: 50px;
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: rgb(255, 255, 255); 
-    color: black; 
+    background-color: rgb(255, 255, 255);
+    color: black;
     border: 2px solid #000000;
   }
 
@@ -140,7 +140,7 @@
       padding: 0;
       margin: 0;
   }
-    
+
   #contact {
       margin-bottom: 0; /* Remove margin at the bottom of the contact section */
   }
@@ -202,7 +202,7 @@
   }
 
   @keyframes fade {
-    from {opacity: .4} 
+    from {opacity: .4}
     to {opacity: 1}
   }
 
@@ -247,12 +247,12 @@
   }
 
 
-    
+
   </style>
 </head>
 <body>
 
-  
+
 <!-- Navbar at the very top -->
 <div class="navbar">
 
@@ -265,9 +265,9 @@
         <a href="#">join us</a>
         <a href="#">keep in touch</a>
     </div>
- </div> 
+ </div>
   <div class="dropdown">
-    <button class="dropbtn"><a href="#Blog">Blog</a> 
+    <button class="dropbtn"><a href="#Blog">Blog</a>
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
@@ -275,7 +275,7 @@
       <a href="#">Li 2</a>
       <a href="#">Li 3</a>
     </div>
-  </div> 
+  </div>
   <div class="dropdown">
     <button class="dropbtn"><a href="#your account">Your Account</a>
       <i class="fa fa-caret-down"></i>
@@ -284,8 +284,8 @@
       <a href="#">monthly</a>
       <a href="#">individual</a>
     </div>
-  </div> 
-    
+  </div>
+
   <div class="dropdown">
     <button class="dropbtn"><a href="#forum">Forum</a>
       <i class="fa fa-caret-down"></i>
@@ -306,7 +306,7 @@
     </div>
   </div>
 
-    
+
   <div class="login-container">
     <form action="/action_page.php">
       <input type="text" placeholder="Username" name="username">
@@ -315,14 +315,14 @@
     </form>
   </div>
 
-  </div> 
+  </div>
 </div>
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-center" style="max-width:1200px; margin-top: 80px;">
 <div style="background-color:black;color:white;padding:50px;">
   <img class="w3-image" src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_teaser_image/2020-10/lbrevirostris_rcb1282_stack1_20190423-dsc_1936.jpeg.jpg?itok=2CyHcgWW" alt="Me" width="1500" height="100">
-  
+
   </div>
 </div>
 </header>
@@ -332,7 +332,7 @@
 <div style="background-color:rgb(0, 0, 0);color:white;padding:50px;">
   <!-- Images (Portfolio) -->
   <center><h1>About Us</h1>
-  
+
   <h3>
     New Age Bio is an innovative biotechnology startup based in Los Angeles that focuses on cutting-edge research and development to revolutionize the healthcare industry. We're a team of young and talented scientists, engineers, and entrepreneurs driven by the idea of contributing to a better tomorrow. We provide smart solutions and unparalleled service to companies of all sizes. We believe that the right understanding and technological edge can lead companies towards a successful future. Contact us today to learn more about our services and how we can help you.</h3>
     <button onclick="myFunction()">See more</button>
@@ -357,40 +357,40 @@
     <div style="background-color:rgb(255, 255, 255);color:rgb(0, 0, 0);padding:50px;">
       <center><h2>Slideshow Gallery</h2>
       <p>Change image every 2 seconds, change time later on:</p></center>
-      
+
       <div class="slideshow-container">
-      
+
       <div class="mySlides fade">
         <div class="numbertext">1 / 3</div>
         <img src="img_nature_wide.jpg" style="width:100%">
         <div class="text">Caption Text</div>
       </div>
-      
+
       <div class="mySlides fade">
         <div class="numbertext">2 / 3</div>
         <img src="img_snow_wide.jpg" style="width:100%">
         <div class="text">Caption Two</div>
       </div>
-      
+
       <div class="mySlides fade">
         <div class="numbertext">3 / 3</div>
         <img src="img_mountains_wide.jpg" style="width:100%">
         <div class="text">Caption Three</div>
       </div>
-      
+
       </div>
       <br>
-      
+
       <div style="text-align:center">
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>
-      
+
 </div>
 
 <!--account button-->
-<div class=;"w3-content w3-padding-large w3-margin-top" id="gallery">
+<div class="w3-content w3-padding-large w3-margin-top" id="gallery">
     <div style="background-color:rgb(255, 255, 255);color:rgb(0, 0, 0);padding:50px;">
         <center>
             <h1>Join us!</h1>
@@ -431,20 +431,20 @@
   <script>
     let slideIndex = 0;
     showSlides();
-    
+
     function showSlides() {
       let i;
       let slides = document.getElementsByClassName("mySlides");
       let dots = document.getElementsByClassName("dot");
       for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+        slides[i].style.display = "none";
       }
       slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
+      if (slideIndex > slides.length) {slideIndex = 1}
       for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
       }
-      slides[slideIndex-1].style.display = "block";  
+      slides[slideIndex-1].style.display = "block";
       dots[slideIndex-1].className += " active";
       setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
@@ -460,7 +460,7 @@
       }
     }
     </script>
-  
-  
+
+
 </body>
 </html>
