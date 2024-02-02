@@ -1,60 +1,224 @@
----
-layout: layout.liquid
-title: Account
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>New Age Bio home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    /* Add CSS for dropdown */
+    .navbar {
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: space-evenly; /* Center the buttons with equal space between them */
+  }
 
-<style>
+  .navbar a {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: #cbccff;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 100;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    body {
+      background-color: #c6dae6; /* Set background color to #c6dae6 ALLLLL THE FUYCKIN TIMMEMEMM */
+    }
+
     .activity {
-        font-size: xx-large;
+        font-size: xx-large; 
         font-weight: bold;
         text-transform: uppercase;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 50px; 
+        margin-bottom: 50px; 
     }
-</style>
+
+    .login-container {
+      float: right;
+    }
+
+    .login-container input[type=text] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: none;
+      width:120px;
+    }
+
+    .login-container button {
+      float: right;
+      padding: 6px 10px;
+      margin-top: 8px;
+      margin-right: 16px;
+      background-color: #555;
+      color: white;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .login-container button:hover {
+      background-color: green;
+    }
+
+    @media screen and (max-width: 600px) {
+      .login-container {
+        float: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar at the very top -->
+<div class="navbar">
+
+  <div class="dropdown">
+    <button class="dropbtn"><a href="#Home">Home</a>
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="#">about us</a>
+        <a href="#">join us</a>
+        <a href="#">keep in touch</a>
+    </div>
+ </div> 
+  <div class="dropdown">
+    <button class="dropbtn"><a href="#Blog">Blog</a> 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Li1</a>
+      <a href="#">Li 2</a>
+      <a href="#">Li 3</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn"><a href="#your account">Your Account</a>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">monthly</a>
+      <a href="#">individual</a>
+    </div>
+  </div> 
+    
+  <div class="dropdown">
+    <button class="dropbtn"><a href="#forum">Forum</a>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">monthly</a>
+      <a href="#">individual</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn"><a href="#forum">Study with Us</a>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">monthly</a>
+      <a href="#">individual</a>
+    </div>
+  </div>
+
+    
+  <div class="login-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Username" name="username">
+      <input type="text" placeholder="Password" name="psw">
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  </div> 
+</div>
+
+
+
 <div class="w3-content w3-padding-large w3-margin-top">
-    <div
-        style="
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
-            padding: 50px;
-        "
-    >
-        <center>
-            <h1>Your Account</h1>
-            <!-- Placeholder :(.....) -->
-            <p>
-                Welcome, [User Name]! Manage your account settings and
-                preferences below.
-            </p>
-
-            <div>
-                <h3>Account Information</h3>
-                <p>Username: [Your Username]</p>
-                <p>Email: [Your Email]</p>
-            </div>
-
-            <!-- Add moreshitttttttttt -->
-        </center>
+    <div style="background-color:rgb(255, 255, 255);color:rgb(0, 0, 0);padding:50px;">
+      <center>
+        <h1>Your Account</h1>
+        <!-- Placeholder :(.....) -->
+        <p>Welcome, [User Name]! Manage your account settings and preferences below.</p>
+        
+        
+        <div>
+          <h3>Account Information</h3>
+          <p>Username: [Your Username]</p>
+          <p>Email: [Your Email]</p>
+        </div>
+  
+        <!-- Add moreshitttttttttt -->
+        
+      </center>
     </div>
 </div>
 
-<div class="activity">
+  <div class="activity">
     <center>
-        <p1>Activities</p1>
-    </center>
+    <p1>Activities</p1>
+</center>
 </div>
 
+
 <div class="w3-content w3-padding-large w3-margin-top">
-    <div
-        style="
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
-            padding: 50px;
-        "
-    >
-        <center>
-            <h1>recent activity</h1>
-        </center>
+    <div style="background-color:rgb(255, 255, 255);color:rgb(0, 0, 0);padding:50px;">
+     
+      <center>
+        <h1>recent activity</h1>
+        
+      </center>
     </div>
-</div>
+  </div>
+
+</body>
+</html>
