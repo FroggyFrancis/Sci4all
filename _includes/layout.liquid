@@ -1,0 +1,95 @@
+---
+title: New Age Bio
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            {{ title | escape }}
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <a href="/">Home
+                    </a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">about us
+                    </a>
+                    <a href="#">join us
+                    </a>
+                    <a href="#">keep in touch
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <a href="#Blog">Blog
+                    </a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Li1
+                    </a>
+                    <a href="#">Li 2
+                    </a>
+                    <a href="#">Li 3
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <a href="#your account">Your Account
+                    </a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">monthly
+                    </a>
+                    <a href="#">individual
+                    </a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <a href="#forum">Forum
+                    </a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">monthly
+                    </a>
+                    <a href="#">individual
+                    </a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <a href="#forum">Study with Us
+                    </a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">monthly
+                    </a>
+                    <a href="#">individual
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            {{ content }}
+        </main>
+    </body>
+</html>
