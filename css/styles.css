@@ -19,6 +19,7 @@
 .dropdown {
     float: left;
     overflow: hidden;
+    border-radius: 12px
 }
 
 .dropdown .dropbtn {
@@ -31,6 +32,7 @@
     font-family: inherit;
     margin: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px
 } 
 
 .navbar a:hover,
@@ -126,6 +128,7 @@ body {
     background-color: rgb(255, 255, 255);
     color: black;
     border: 2px solid #000000;
+    border-radius: 12px
 }
 
 #intro button:hover {
