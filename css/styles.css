@@ -61,10 +61,12 @@
 
 .dropdown-content a:hover {
     background-color: #ddd;
+    border-radius: 12px
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+    border-radius: 12px
 }
 
 body {
