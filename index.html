@@ -2,9 +2,7 @@
 layout: layout.liquid
 title: New Age Bio
 ---
-<style>
-    #more {display: none;}
-</style>
+
 <!-- Header -->
 <header
     class="w3-display-container w3-content w3-center"
@@ -30,7 +28,7 @@ title: New Age Bio
 
             <h3>
                 New Age Bio is an innovative biotechnology startup based in Los
-                Angeles that focuses on cutting-edge research and development <span id="dots">...</span><span id="more"></span>to
+                Angeles that focuses on cutting-edge research and development to
                 revolutionize the healthcare industry. We're a team of young and
                 talented scientists, engineers, and entrepreneurs driven by the
                 idea of contributing to a better tomorrow. We provide smart
@@ -52,8 +50,8 @@ title: New Age Bio
                         <li><button>dermatology</button></li>
                         <li><button>endocrinology</button></li>
                     </center>
-                </span></ul>
-                <button onclick="myFunction()" id="myBtn">Read more</button>
+                </ul>
+                
             </div>
         </div>
     </div>
@@ -146,23 +144,7 @@ title: New Age Bio
                 setTimeout(showSlides, 2000); // Change image every 2 seconds
             }
         </script>
-        <script>
-            function myFunction() {
-                var dots = document.getElementById("dots");
-                var moreText = document.getElementById("more");
-                var btnText = document.getElementById("myBtn");
-                
-                if (dots.style.display === "none") {
-                    dots.style.display = "inline";
-                    btnText.innerHTML = "Read more"; 
-                    moreText.style.display = "none";
-                } else {
-                    dots.style.display = "none";
-                    btnText.innerHTML = "Read less"; 
-                    moreText.style.display = "inline";
-                }
-            }
-        </script>
+
 
     </div>
 </div>
