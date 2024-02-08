@@ -3,7 +3,7 @@
     background-color: #333;
     display: flex;
     justify-content: space-evenly;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 70x 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* Center the buttons with equal space between them */
 }
 
@@ -29,8 +29,8 @@
     background-color: inherit;
     font-family: inherit;
     margin: 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 70px 20px 0 rgba(0, 0, 0, 0.19);
-}
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
