@@ -3,6 +3,7 @@
     background-color: #333;
     display: flex;
     justify-content: space-evenly;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 70px 70px 0 rgba(0, 0, 0, 0.19);
     /* Center the buttons with equal space between them */
 }
 
@@ -28,11 +29,12 @@
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 70px 70px 0 rgba(0, 0, 0, 0.19);
 }
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-    background-color: #cbccff;
+    background-color: #97D2E4;
 }
 
 .dropdown-content {
@@ -62,7 +64,7 @@
 }
 
 body {
-    background-color: #c6dae6;
+    background-color: #97D2E4;
     /* Set background color to #c6dae6 */
 }
 
@@ -91,7 +93,7 @@ body {
 }
 
 .button:hover {
-    background-color: #cbccff;
+    background-color: #97D2E4;
     color: #000000;
     transform: scale(1.1);
     transition: transform 0.3s ease;
@@ -126,7 +128,7 @@ body {
 }
 
 #intro button:hover {
-    background-color: #cbccff;
+    background-color: #97D2E4;
     color: #000000;
     transform: scale(1.1);
     transition: transform 0.3s ease;
