@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            New Age Bio
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <a href="/">Home
+                    </a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">about us
+                    </a>
+                    <a href="#">join us
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <a href="/yourAccount/">Join US
+                    </a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">About You
+                    </a>
+                    <a href="#">Your Role
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <a href="/studyResources/">Study With Us
+                    </a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Subject1
+                    </a>
+                    <a href="#">Subject2
+                    </a>
+                    <a href="#">Subject3
+                    </a>
+                    <a href="#">Subject4
+                    </a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <a href="/Article/">Article
+                    </a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Subject1
+                    </a>
+                </div>
+            </div>
+
+
+        </nav>
+
+        <main>
+            
+<!-- Header -->
+<header
+    class="w3-display-container w3-content w3-center"
+    style="max-width: 1200px; margin-top: 80px"
+>
+    <div style="background-color: #333; color: #D9D9D9; padding: 20px">
+        <img
+            class="w3-image"
+            src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_teaser_image/2020-10/lbrevirostris_rcb1282_stack1_20190423-dsc_1936.jpeg.jpg?itok=2CyHcgWW"
+            alt="Me"
+            width="1500"
+            height="100"
+        />
+    </div>
+</header>
+
+<br>
+<br>
+<br>
+
+<!-- Page content -->
+<div class="w3-content w3-padding-large w3-margin-top" id="intro">
+    <div style="background-color: #D9D9D9; color: #000000; padding: 50px">
+        <!-- Images (Portfolio) -->
+        <div style="text-align: center">
+            <h1>About Us</h1>
+
+            <h3>
+                New Age Bio is an innovative biotechnology startup based in Los
+                Angeles that focuses on cutting-edge research and development to
+                revolutionize the healthcare industry. We're a team of young and
+                talented scientists, engineers, and entrepreneurs driven by the
+                idea of contributing to a better tomorrow. We provide smart
+                solutions and unparalleled service to companies of all sizes. We
+                believe that the right understanding and technological edge can
+                lead companies towards a successful future. Contact us today to
+                learn more about our services and how we can help you.
+            </h3>
+
+
+            <div id="myDIV">
+                <ul>
+                    <center>
+                        <li><button>pharmacy</button></li>
+                        <li><button>bioengineering</button></li>
+                        <li><button>biology</button></li>
+                        <li><button>chemistry</button></li>
+                        <li><button>genetics</button></li>
+                        <li><button>dermatology</button></li>
+                        <li><button>endocrinology</button></li>
+                    </center>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-content w3-padding-large w3-margin-top" id="gallery">
+        <div
+            style="
+                background-color: #D9D9D9;
+                color: rgb(0, 0, 0);
+                padding: 50px;
+            "
+        >
+            <center>
+                <h2>Slideshow Gallery</h2>
+                <p>Change image every 2 seconds, change time later on:</p>
+            </center>
+
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="img_nature_wide.jpg" style="width: 100%" />
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="img_snow_wide.jpg" style="width: 100%" />
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="img_mountains_wide.jpg" style="width: 100%" />
+                    <div class="text">Caption Three</div>
+                </div>
+            </div>
+            <br />
+
+            <div style="text-align: center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+        <!--account button-->
+        <div class="w3-content w3-padding-large w3-margin-top" id="Join">
+            <div
+                style="
+                    background-color: #D9D9D9;
+                    color: rgb(0, 0, 0);
+                    padding: 50px;
+                "
+            >
+                <center>
+                    <h1>Join us!</h1>
+                    <br />
+                    <h3>benefits of joining blah blah</h3>
+                    <center>
+                        <button class="account button">Join Us</button>
+                    </center>
+                </center>
+            </div>
+        </div>
+
+        <br />
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(
+                        " active",
+                        ""
+                    );
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+    </div>
+</div>
+
+        </main>
+    </body>
+</html>
