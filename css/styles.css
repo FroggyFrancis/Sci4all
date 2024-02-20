@@ -96,6 +96,8 @@ body {
     background-color: rgb(255, 255, 255);
     color: black;
     border: 2px solid #000000;
+    border-radius: 12px
+
 }
 
 .button:hover {
@@ -103,6 +105,7 @@ body {
     color: #000000;
     transform: scale(1.1);
     transition: transform 0.3s ease;
+    border-radius: 12px
 }
 
 #intro {
