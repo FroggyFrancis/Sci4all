@@ -11,13 +11,13 @@ title: New Age Bio
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="{{'/css/styles.css' | url}}">
     </head>
     <body>
         <nav class="navbar">
             <div class="dropdown">
                 <button class="dropbtn">
-                    <a href="/">Home
+                    <a href="{{'/' | url}}">Home
                     </a>
                     <i class="fa fa-caret-down"></i>
                 </button>
@@ -43,7 +43,7 @@ title: New Age Bio
             </div>
             <div class="dropdown">
                 <button class="dropbtn">
-                    <a href="/studyResources/">Study With Us
+                    <a href="{{'/studyResources/' | url}}">Study With Us
                     </a>
                     <i class="fa fa-caret-down"></i>
                 </button>
@@ -61,7 +61,7 @@ title: New Age Bio
 
             <div class="dropdown">
                 <button class="dropbtn">
-                    <a href="/Article/">Article
+                    <a href="{{'/Article/' | url}}">Article
                     </a>
                     <i class="fa fa-caret-down"></i>
                 </button>
