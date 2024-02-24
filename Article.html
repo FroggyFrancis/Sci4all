@@ -4,29 +4,74 @@ title: New Age Bio
 ---
 <style>
 a {
-  display : block; /* or inline-block */
+  display: block; /* or inline-block */
+  position: relative; /* Added */
+  
 }
+
 a iframe {
-  pointer-events : none;
+  pointer-events: none;
+  box-shadow:  8px -8px 10px 0 rgba(0, 0, 0, 0.1);
 }
+
 ul {
   list-style-type: none; 
   padding: 0; 
   margin: 0; 
+}
+
+.box {
+  width: 500px;
+  height: 80px;
+  background-color:  #97D2E4; 
+  position: absolute;
+  bottom: 0; 
+  left: 0; 
+  z-index: 1; 
+  border-radius: 12px; /* Added for rounded borders */
+  box-shadow:  8px -8px 10px 0 rgba(0, 0, 0, 0.1);
 }
 </style>
 
 <div class="w3-content w3-padding-large w3-margin-top">
     <h1><b>Welcome to Our Article Page!</b></h1>
     <h3>Our articles are written by our trustworthy members on either the <em><b>Monthly Scientific Writing</b></em>, or the <em><b>Independent Scientific Writing</b></em>
-    <br>if you want to write your own articles as a member, read <a href="#"style=background-color; none>this manual</a> to find out!</h3>
+    <br>if you want to write your own articles as a member, read <a href="#" style="background-color: none;">this manual</a> to find out!</h3>
 
     <ul>
-        <li><a href="/BIO/">
-            <iframe src="/BIO/" height="500", width="950"style="border:10px solid #97D2E4;"></iframe>
-        </a></li>
+        <li>
+            <a href="/BIO/">
+                <iframe src="/BIO/" height="500" width="950" style="border:10px solid #97D2E4;"></iframe>
+                <div class="box"><h3><b>   Welcome to Biology!(Intro to Biology)</b></h3></div> <!-- Fixed closing tag -->
+            </a>
+        </li>
         <br>
-        <li><a href="/GEN/"><iframe src="/GEN/" height="500", width="950" style="border:10px solid #97D2E4;"></iframe>
-        </a></li>
+        <li>
+            <a href="/GEN/">
+                <iframe src="/GEN/" height="500" width="950" style="border:10px solid #97D2E4;"></iframe>
+                <div class="box"><h3><b>   Welcome to Genetics!(Intro to Genetics)</b></h3></div> <!-- Fixed closing tag -->
+            </a>
+        </li>
+        <br>
+        <li>
+            <a href="/BIOMECH/">
+                <iframe src="/BIOMECH/" height="500" width="950" style="border:10px solid #97D2E4;"></iframe>
+                <div class="box"><h3><b>   Welcome to Genetics!(Intro to Genetics)</b></h3></div> <!-- Fixed closing tag -->
+            </a>
+        </li>
+        <br>
+        <li>
+            <a href="/CHEM/">
+                <iframe src="/CHEM/" height="500" width="950" style="border:10px solid #97D2E4;"></iframe>
+                <div class="box"><h3><b>   Welcome to Chemistry!(Intro to Chemistry)</b></h3></div> <!-- Fixed closing tag -->
+            </a>
+        </li>
+        <br>
+        <li>
+            <a href="/PHARM/">
+                <iframe src="/PHARM/" height="500" width="950" style="border:10px solid #97D2E4;"></iframe>
+                <div class="box"><h3><b>   Welcome to Pharmacy!(Intro to Pharmacy)</b></h3></div> <!-- Fixed closing tag -->
+            </a>
+        </li>
     </ul>
 </div>
