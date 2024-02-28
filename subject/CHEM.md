@@ -1,6 +1,6 @@
 ---
 layout: layout.liquid
-title: Biology
+title: Chemistry
 ---
 # Welcome to Chemistry!
 
