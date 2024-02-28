@@ -1,4 +1,3 @@
-
 ---
 layout: layout.liquid
 title: Pharmacy
