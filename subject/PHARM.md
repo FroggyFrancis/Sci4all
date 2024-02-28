@@ -1,7 +1,7 @@
 
 ---
 layout: layout.liquid
-title: Biology
+title: Pharmacy
 ---
 # Welcome to Pharmacy!
 
