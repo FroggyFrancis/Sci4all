@@ -1,6 +1,5 @@
 ---
-layout: layout.liquid
-title: Biology
+title: Biomechanics
 ---
 
 # Welcome to Biomechanics!
