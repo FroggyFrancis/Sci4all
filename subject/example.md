@@ -1,5 +1,4 @@
 ---
-layout: layout.liquid
 title: Example Study Guide
 ---
 
