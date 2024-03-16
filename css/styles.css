@@ -1,4 +1,6 @@
-
+.dropbtn .fa-caret-down {
+    display: none;
+}
 .navbar {
     overflow: hidden;
     background-color: #435147;
