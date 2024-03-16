@@ -131,15 +131,20 @@ input[type=submit]:hover {
 
   <script>
     document.getElementById("contactForm").addEventListener("submit", function(event) {
+      // Prevent the default form submission
       event.preventDefault();
       
+      // Get the form data
       var formData = new FormData(this);
       
-    
-      window.location.href = "/original_page_url"; 
+      // Send the form data to your server using AJAX
+      // Here you can use fetch or XMLHttpRequest to send the form data
       
-
-      alert("Your message has been sent. Thank you for contacting us!");
+      // Assuming the form submission was successful, redirect the user to the original homepage after they click OK on the confirmation dialog
+      if (confirm("Your message has been sent. Thank you for contacting us! Click OK to return to the homepage.")) {
+        window.location.href = "/"; // Replace "/" with the URL of your original homepage
+      }
     });
   </script>
+  
   

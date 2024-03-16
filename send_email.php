@@ -12,7 +12,7 @@ $message .= "Email: $email\n";
 $message .= "Message: $subject\n";
 
 // Send email notification
-$to = "your@email.com"; // Change this to your email address
+$to = "Sciforallofficial@gmail.com"; // Change this to your email address
 $subject = "New Message from SciForAll Contact Form";
 $headers = "From: $email";
 
