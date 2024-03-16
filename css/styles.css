@@ -1,3 +1,4 @@
+
 .navbar {
     overflow: hidden;
     background-color: #435147;
@@ -70,7 +71,7 @@
 }
 
 body {
-    background-color: #77948E;
+    background-color: #a1c6ae;
     /* Set background color to #c6dae6 */
 }
 
@@ -83,6 +84,13 @@ body {
 .w3-bar-item:hover {
     border-bottom: 2px solid #435147;
 }
+
+.w3-content {
+    width: 100%; /* Set the width to 100% */
+    max-width: none; /* Remove any maximum width */
+    padding: 0; /* Remove any padding */
+    margin: 0 auto; /* Center the content horizontally */
+  }
 
 .button {
     padding: 16px 32px;
@@ -175,13 +183,6 @@ img {
     vertical-align: middle;
 }
 
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-
 /* Caption text */
 .text {
     color: #f2f2f2;
@@ -217,6 +218,21 @@ img {
     background-color: #717171;
 }
 
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 /* Fading animation */
 .fade {
     animation-name: fade;
@@ -236,39 +252,5 @@ img {
 @media only screen and (max-width: 300px) {
     .text {
         font-size: 11px;
-    }
-}
-
-.login-container {
-    float: right;
-}
-
-.login-container input[type="text"] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-    width: 120px;
-}
-
-.login-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background-color: #555;
-    color: white;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-
-.login-container button:hover {
-    background-color: green;
-}
-
-@media screen and (max-width: 600px) {
-    .login-container {
-        float: none;
     }
 }

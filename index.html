@@ -2,13 +2,52 @@
 layout: layout.liquid
 title: SciForAll
 ---
+<style>
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border-radius: 12px
+}
 
+input[type=submit] {
+  background-color:#A39AA5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px
+}
+
+input[type=submit]:hover {
+  background-color: #A39AA5;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
 <!-- Header -->
 <header
     class="w3-display-container w3-content w3-center"
-    style="max-width: 1200px; margin-top: 80px"
+    style="max-width: 1800px; margin-top: 80px"
 >
-    <div style="background-color: #333; color: #D9D9D9; padding: 20px">
+    <div style="background-color: #333; color: #D9D9D9; padding: 0px">
         <img
             class="w3-image"
             src="https://cdn.discordapp.com/attachments/1133636066998493246/1217991023880437800/PICTUREE.png.jpg?ex=66060989&is=65f39489&hm=1f12703fbdce40aab78a4d02b5b509afb1f81dbb0c67ef86fe50531edc6f4598&"
@@ -26,25 +65,21 @@ title: SciForAll
 <!-- Page content -->
 <div class="w3-content w3-padding-large w3-margin-top" id="intro">
     <section id="AboutUs">
-        <div style="background-color: #D9D9D9; color: #000000; padding: 50px">
-            <!-- Images (Portfolio) -->
+        <div style="background-color: #a1c6ae; color: #000000; padding: 50px;">
             <div style="text-align: center">
                 <h1><b>What is SciForAll?</b></h1>
                 <h3>
                     SciForAll is a student-led non-profit organization that aims to provide more opportunities for K-12 students to learn, investigate, and write about various different science fields. We also focus on creating easily accessible STEM resources for students in junior high and elementary school. We are looking forward to motivating future generations to be interested in science and join the exciting journey of new discoveries.
                 </h3>
-
+                <br>
                 <div id="myDIV">
-                    <ul>
-                        <center>
-                            <li><a href="{{'/subject/PHARM' | url}}"><button>Pharmacy</button></a></li>
-                            <li><a href="{{'/subject/BIOMECH' | url}}"><button>Biomechanics</button></a></li>
-                            <li><a href="{{'/subject/BIO' | url}}"><button>Biology</button></a></li>
-                            <li><a href="{{'/subject/CHEM' | url}}"><button>chemistry</button></a></li>
-                            <li><a href="{{'/subject/GEN' | url}}"><button>genetics</button></a></li>
-                        </center>
+                    <ul style="list-style-type: none; padding: 0; margin: 0; display: flex; justify-content: center;">
+                        <li style="margin-right: 10px;"><a href="{{'/subject/PHARM' | url}}"><button>Pharmacy</button></a></li>
+                        <li style="margin-right: 10px;"><a href="{{'/subject/BIOMECH' | url}}"><button>Biomechanics</button></a></li>
+                        <li style="margin-right: 10px;"><a href="{{'/subject/BIO' | url}}"><button>Biology</button></a></li>
+                        <li style="margin-right: 10px;"><a href="{{'/subject/CHEM' | url}}"><button>Chemistry</button></a></li>
+                        <li><a href="{{'/subject/GEN' | url}}"><button>Genetics</button></a></li>
                     </ul>
-                    
                 </div>
             </div>
         </div>
@@ -53,9 +88,10 @@ title: SciForAll
     <div class="w3-content w3-padding-large w3-margin-top" id="gallery">
         <div
             style="
-                background-color: #D9D9D9;
+                background-color: #a1c6ae;
                 color: rgb(0, 0, 0);
                 padding: 50px;
+                width: 100%;
             "
         >
 
@@ -63,13 +99,17 @@ title: SciForAll
 
     <section id="JoinUs">
         <div class="w3-content w3-padding-large w3-margin-top" id="Join">
-            <div style="background-color: #D9D9D9; color: rgb(0, 0, 0); padding: 50px;">
-                <center>
-                    <h1>Join us!</h1>
-                    <br />
-                    <h3>benefits of joining blah blah</h3>
-                    <a href="{{'/yourAccount/' | url}}"><div class="button">Join Us</div></a>
-                </center>
+            <div style="background-color: #a1c6ae; color: rgb(0, 0, 0); padding: 50px;">
+                <div class="row">
+                    <div class="column">
+                            <h1><b>Join us!</b></h1>
+                            <h5>We are eager to have you on our team :)</h5>
+                            <a href="{{'/yourAccount/' | url}}"><div class="button">Join Us</div></a>
+                    </div>
+                    <div class="column">
+                        <h2>placeholder, probably where the gallery will be</h4>
+                    </div>
+                  </div>
             </div>
         </div>
     </section>
@@ -79,3 +119,29 @@ title: SciForAll
 
     </div>
 </div>
+
+<div class="contacts">
+    <div style="text-align:left">
+      <h2><b>Contact Us</b></h2>
+    <div class="row">
+      <div class="column">
+        <label for="UsEmail"><b>Email:</b> Sciforallofficial@gmail.com</label>
+        <br>
+        <label for="Usnumber"><b>Phone:</b> +1(562)378-9876</label>
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="email">Your Email</label>
+          <input type="text" id="email" name="email" placeholder="Your last name..">
+          <label for="subject">Leave Us a Message!</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+    </div>
+  </div>
