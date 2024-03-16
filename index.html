@@ -112,13 +112,13 @@ input[type=submit]:hover {
         <label for="Usnumber"><b>Phone:</b> +1(562)378-9876</label>
       </div>
       <div class="column">
-        <form action="/action_page.php">
+        <form id="contactForm">
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name..">
           <label for="lname">Last Name</label>
           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
           <label for="email">Your Email</label>
-          <input type="text" id="email" name="email" placeholder="Your last name..">
+          <input type="text" id="email" name="email" placeholder="Your email..">
           <label for="subject">Leave Us a Message!</label>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
           <input type="submit" value="Submit">
@@ -127,3 +127,19 @@ input[type=submit]:hover {
     </div>
     </div>
   </div>
+
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      var formData = new FormData(this);
+      
+    
+      window.location.href = "/original_page_url"; 
+      
+
+      alert("Your message has been sent. Thank you for contacting us!");
+    });
+  </script>
+  
