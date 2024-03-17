@@ -3,6 +3,26 @@ layout: layout.liquid
 title: SciForAll
 ---
 <style>
+.intro-text {
+    position: relative;
+    overflow: hidden;
+    transition: height 0.5s ease; /* Use height transition instead of top */
+    height: 200px; /* Set initial height */
+}
+
+.extended-text {
+    position: absolute;
+    top: 100%; /* Initially position the extended text below the intro text */
+    left: 0;
+    width: 100%;
+    background-color: #D9D9D9;
+    padding: 50px;
+}
+
+.extended-text.show {
+    top: 0; /* Move the extended text to its original position */
+}
+
 
 .fa-instagram {
   background: none;
@@ -70,26 +90,38 @@ input[type=submit]:hover {
 
 <!-- Page content -->
 <div class="w3-content w3-padding-large w3-margin-top" id="intro">
-    <section id="AboutUs">
-        <div style="background-color: #D9D9D9; color: #000000; padding: 50px;">
-            <div style="text-align: center">
-                <h1><b>What is SciForAll?</b></h1>
-                <h3>
-                    SciForAll is a student-led non-profit organization that aims to provide more opportunities for K-12 students to learn, investigate, and write about various different science fields. We also focus on creating easily accessible STEM resources for students in junior high and elementary school. We are looking forward to motivating future generations to be interested in science and join the exciting journey of new discoveries.
-                </h3>
-                <br>
-                <div id="myDIV">
-                    <ul style="list-style-type: none; padding: 0; margin: 0; display: flex; justify-content: center;">
-                        <li style="margin-right: 10px;"><a href="{{'/subject/PHARM' | url}}"><button>Pharmacy</button></a></li>
-                        <li style="margin-right: 10px;"><a href="{{'/subject/BIOMECH' | url}}"><button>Biomechanics</button></a></li>
-                        <li style="margin-right: 10px;"><a href="{{'/subject/BIO' | url}}"><button>Biology</button></a></li>
-                        <li style="margin-right: 10px;"><a href="{{'/subject/CHEM' | url}}"><button>Chemistry</button></a></li>
-                        <li><a href="{{'/subject/GEN' | url}}"><button>Genetics</button></a></li>
-                    </ul>
+  <section id="AboutUs">
+    <div style="background-color: #D9D9D9; color: #000000; padding: 50px;">
+        <div style="text-align: center">
+            <h1><b>What is SciForAll?</b></h1>
+            <div id="introText" class="intro-text">
+                <h4>
+                    SciForAll is a student-led non-profit organization that aims to provide more opportunities for K-12 students to learn, investigate, and write about various different science fields.
+                </h4>
+                <div id="extendedText" class="extended-text">
+                    <h4>
+                      SciForAll is a student-led non-profit organization that aims to provide more opportunities for K-12 students to learn, investigate, and write about various different science fields. We also focus on creating easily accessible STEM resources for students in junior high and elementary school. We are looking forward to motivating future generations to be interested in science and join the exciting journey of new discoveries. SciForAll's mission is to inspire curiosity and foster a love for science among young learners through hands-on experiences and engaging educational materials. Our team of passionate volunteers is dedicated to making science accessible and enjoyable for all students, regardless of background or ability.
+                    </h4>
+                    <div id="buttonContainer" style="text-align: center;">
+                        <ul style="list-style-type: none; padding: 0; margin: 0; display: inline;">
+                            <li style="margin-right: 10px;"><a href="{{'/subject/PHARM' | url}}"><button>Pharmacy</button></a></li>
+                            <li style="margin-right: 10px;"><a href="{{'/subject/BIOMECH' | url}}"><button>Biomechanics</button></a></li>
+                            <li style="margin-right: 10px;"><a href="{{'/subject/BIO' | url}}"><button>Biology</button></a></li>
+                            <li style="margin-right: 10px;"><a href="{{'/subject/CHEM' | url}}"><button>Chemistry</button></a></li>
+                            <li><a href="{{'/subject/GEN' | url}}"><button>Genetics</button></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <div id="readMoreButton">
+                <button onclick="toggleIntroduction()">Read More</button>
+            </div>
+            <br>
         </div>
-    </section>
+    </div>
+</section>
+
+
 
     
     <section id="JoinUs" style="width: 100%;">
@@ -98,7 +130,7 @@ input[type=submit]:hover {
                 <div class="row">
                     <div class="column" style="width: 50%; margin: auto;">
                             <h1><b>Join us!</b></h1>
-                            <h5>We are eager to have you on our team :)</h5>
+                            <h4>We are eager to have you on our team :)</h4>
                             <a href="{{'/yourAccount/' | url}}"><div class="button">Join Us</div></a>
                     </div>
                     <div class="column" style="width: 50%;"></div>
@@ -110,12 +142,12 @@ input[type=submit]:hover {
 
 <div class="contacts">
     <div style="text-align:left; padding: 50px;">
-      <h2><b>Contact Us</b></h2>
+      <h1><b>Contact Us</b></h1>
     <div class="row">
       <div class="column">
-        <label for="UsEmail"><b>Email:</b> Sciforallofficial@gmail.com</label>
+        <label for="UsEmail"><h4><b>Email:</b> Sciforallofficial@gmail.com</h4></label>
         <br>
-        <label for="Usnumber"><b>Phone:</b> +1(562)378-9876</label>
+        <label for="Usnumber"><h4><b>Phone:</b> +1(562)378-9876</h4></label>
         <br>
         <a href="https://www.instagram.com/sciforall_sfa/" class="fa fa-instagram" style="font-size:36px"></a>
       </div>
@@ -153,6 +185,23 @@ input[type=submit]:hover {
         window.location.href = "/"; // Replace "/" with the URL of your original homepage
       }
     });
-  </script>
+  </script>  
+<script>
+    function toggleIntroduction() {
+      var introText = document.querySelector(".intro-text");
+      var extendedText = document.querySelector(".extended-text");
+      var buttonsContainer = document.getElementById("buttonContainer");
   
-  
+      if (extendedText.classList.contains("show")) {
+          // Hide extended text and buttons
+          introText.style.height = "200px"; // Set intro text height back to its original value
+          extendedText.classList.remove("show");
+          buttonsContainer.style.display = "none";
+      } else {
+          // Show extended text and buttons
+          introText.style.height = (introText.scrollHeight + 50) + "px"; // Adjust the height to accommodate the extended text and buttons
+          extendedText.classList.add("show");
+          buttonsContainer.style.display = "block";
+      }
+  }  
+</script>
